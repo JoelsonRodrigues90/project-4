@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap" rel="stylesheet">
+    <title>Conversor</title>
+
+</head>
+<body>
+    <!--cabeçalho-->
+    <header>
+        CONVERSOR 
+    </header>
+
+    <!--Corpo-->
+    <div class="container">
+    
+     <!--Temperatura-->   
+        <div class="quadro">
+            <h3 class="ml-3 mt-5">Temperatura</h3>
+            <div class="box">
+                <input type="text" class="input-class" id="faheinheit" placeholder="faheinheit" name="f" value="" />
+                <input type="text" class="input-class" id="celsius" placeholder="celsius" name="c" value="" />
+                <input type="text" class="input-class" id="kelvin" placeholder="kelvin" name="k" value="" />
+                <button id="convert">Converter</button>
+                <button id="reset">Reset</button>
+            </div>
+        </div>
+
+
+     <!--Medida-->   
+        <div class="quadro">
+            <h3 class="ml-7 mt-4">Medidas</h3>
+            <div class="box">
+                <input type="text" class="input-class" id="milimetros" placeholder="milimetros" name="mm" value="" />
+                <input type="text" class="input-class" id="centimetros" placeholder="centimetros" name="cm" value="" />
+                <input type="text" class="input-class" id="metros" placeholder="metros" name="mt" value="" />
+                <input type="text" class="input-class" id="kilometros" placeholder="kilometros" name="km" value="" />
+                <button id="convert-med">Converter</button>
+                <button id="reset-med">Reset</button>
+            </div>
+        </div>
+
+     <!--Horas--> 
+     
+        <div class="quadro">
+            <h3 class="ml-8 mt-6">Tempo</h3>
+            <div class="box">
+                <input type="text" class="input-class" id="segundos" placeholder="segundos" name="s" value="" />
+                <input type="text" class="input-class" id="minutos" placeholder="minutos" name="m" value="" />
+                <input type="text" class="input-class" id="horas" placeholder="horas" name="h" value="" />
+                <button id="convert-hora">Converter</button>
+                <button id="reset-hora">Reset</button>
+            </div>
+        </div>
+
+     <!--Massa-->   
+
+     <div class="quadro">
+        <h3 class="ml-8 mt-6">Massa</h3>
+        <div class="box">
+            <input type="text" class="input-class" id="grama" placeholder="grama" name="g" value="" />
+            <input type="text" class="input-class" id="kilograma" placeholder="kilograma" name="gr" value="" />
+            <input type="text" class="input-class" id="tonelada" placeholder="tonelada" name="t" value="" />
+            <button id="convert-massa">Converter</button>
+            <button id="reset-massa">Reset</button>
+        </div>
+    </div>  
+</div>
+<footer>
+    <div class="recado">
+        Observações: Todos os valores decimais,estão arrendondados para cima.<br>
+        Valores decimais usar " . "
+    </div>
+</footer>
+   
+    <script src="conversor.js"></script>
+
+</body>
+</html>
